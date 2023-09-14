@@ -19,9 +19,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 20vh;
-  /* background-color: olive; */
   font-size: 5vw;
-  color: rgb(70, 81, 204);
+  color: rgb(98, 99, 104);
   font-family: MagicSchool;
   margin-bottom: 20px;
 }
@@ -42,7 +41,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 3vw;
+  font-size: 2.5vw;
 
 }
 
@@ -61,4 +60,33 @@ body {
 .player:hover {
   cursor: pointer;
   border: 2px solid rgb(70, 81, 204);
+}
+
+#game_area {
+  width: 60vw;
+  height: 60vh;
+  backdrop-filter: blur(7px) saturate(159%);
+  -webkit-backdrop-filter: blur(7px) saturate(159%);
+  background-color: rgba(238, 231, 231, 0.52);
+  border-radius: 12px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+#game_board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  gap: 1vw;
+  min-width: 30%;
+  width: 100%;
+  height: 100%;
+}
+
+#game_board > div {
+  background-image: url(images/Crest.jpg);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
 }
