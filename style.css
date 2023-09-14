@@ -1,0 +1,64 @@
+@font-face {
+  font-family: MagicSchool;
+  src: url(fonts/MagicSchoolOne-ovYz.ttf);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/GreatHall_Pottermore.webp);
+  background-size:cover;
+  background-repeat: repeat-y;
+  resize:both;
+  overflow: scroll;
+
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  /* background-color: olive; */
+  font-size: 5vw;
+  color: rgb(70, 81, 204);
+  font-family: MagicSchool;
+  margin-bottom: 20px;
+}
+
+.selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  backdrop-filter: blur(7px) saturate(159%);
+  -webkit-backdrop-filter: blur(7px) saturate(159%);
+  background-color: rgba(238, 231, 231, 0.52);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.player-selection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3vw;
+
+}
+
+.player-selection > h2 {
+  text-align: center;
+}
+
+.player {
+  min-width: 10vw;
+  height: 15vh;
+  margin: 0 25px;
+  border: 2px solid;
+  border-radius: 12px;
+}
+
+.player:hover {
+  cursor: pointer;
+  border: 2px solid rgb(70, 81, 204);
+}
