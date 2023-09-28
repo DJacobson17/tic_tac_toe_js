@@ -19,6 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 20vh;
+  /* background-color: olive; */
   font-size: 5vw;
   color: rgb(98, 99, 104);
   font-family: MagicSchool;
@@ -82,11 +83,12 @@ body {
   min-width: 30%;
   width: 100%;
   height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-#game_board > div {
-  background-image: url(images/Crest.jpg);
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
+#modal {
+  display: none;
+  
 }
+
