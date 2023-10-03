@@ -90,6 +90,8 @@ body {
 .gridSpace {
   background-color: black;
   opacity: .7;
+  height: 20vh;
+  width: 20vw;
 }
 
 /* .available {
@@ -100,6 +102,7 @@ body {
 .ron {
   background-image: url(/images/Ron_Weasley_poster.jpg);
   background-size: cover;
+  overflow: hidden;
 }
 #modal {
   display: none;
